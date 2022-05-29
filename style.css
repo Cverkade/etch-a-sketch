@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(42, 77, 203, 0.384);
+
+}
+
+#container {
+    margin: auto;
+    display: grid;
+    border: 1px rgb(101, 101, 101) solid;
+    width: 57%;
+    height: 57%;
+}
+
+.cell {
+    border: 0.5px rgb(101, 101, 101) solid;
+}
+
+#title {
+    text-align: center;
+    color: rgb(0, 0, 82);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.userInput {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 20px;
+}
+
+button {
+    background-color: rgb(42, 77, 203, 0.384);
+    border-radius: 20px;
+    color: (0, 0, 82)
+}
