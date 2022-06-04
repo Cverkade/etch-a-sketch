@@ -14,18 +14,37 @@
 
     <div class="content">
         <div class="userInput">
-            <input type="color" id="color" value="#FFD700" class="colorPicker">
-            <button type="button" id="oneColour" class="selection">1 colour mode</button>
-            <button type="button" id="rainbow" class="selection">Rainbow mode</button>
-            <button type="button" id="random" class="selection">Random colour</button>
             <div>
-                <input type="range" min="1" max="64" value="16" class="slider" id="slider">
-                <div id="gridSize">16 x 16</div>
+                <input type="color" id="color" value="#FFD700" class="colorPicker">
             </div>
+            <div id="userChoice">
+                <button type="button" id="oneColour" class="selection choice active">Colour mode</button>
+                <button type="button" id="rainbow" class="selection choice">Rainbow mode</button>
+                <button type="button" id="random" class="selection random">Random colour</button>
+                <button type="button" id="fillRainbow">Fill rainbow</button>
+                <button type="button" id="fillColour">Fill colour</button>
+            </div>
+            <div>
+                <input type="range" min="1" max="48" value="16" class="slider" id="gridSlider">
+                <div> Grid size: <span id="gridSize">16 x 16</span></div>
+            </div>
+            <div>
+                <input type="range" min="1" max="3" value="1" class="slider" id="brush" step="2">
+                <div>Brush size: <span id="brushText"> 1 x 1</span></div>
+            </div>
+            <div class="labels">
             <label class="switch">
                 <input type="checkbox" id="toggleGridlines">
-                <span id="toggle">Gridlines</span>
+                <span>Gridlines</span>
             </label>
+            <br>
+            <label>
+                <input type="checkbox" id="toggleClick">
+                <spa>Click to colour</span>
+            </label>
+            </div>
+            <button type="button" id="clear">Clear</button>
+
         </div>
     <div id="container">
     

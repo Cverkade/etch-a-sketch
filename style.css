@@ -10,7 +10,7 @@ body {
 
 #container {
     display: grid;
-    border: 1px rgb(101, 101, 101) solid;
+    border: 2px rgb(24, 0, 0) solid;
     min-width: 600px;
         min-height: 600px;
 }
@@ -20,15 +20,15 @@ body {
     width: 900px;
     text-align: center;
         font-size: 30px;
-    color: rgb(0, 0, 82);
+    color: rgb(24, 0, 0);
 }
 
 .userInput {
     display: flex;
     flex-direction: column;
-        margin-top: 100px;
+        margin-top: 10px;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         width: 150px;
 }
 
@@ -40,12 +40,15 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 background-color: rgb(230, 230, 230);
 }
 
+.selection {
+    width: 120px;
+}
 button:hover {
     cursor: pointer;
 }
 
 .active {
-    background-color: rgb(197, 197, 197);
+    border: 2px rgb(24, 0, 0) solid;
 }
 
 #gridSize {
@@ -54,11 +57,11 @@ button:hover {
 
 .colorPicker {
     appearance: none;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+        height: 120px;
     border: none;
     background-color: transparent;
-
+    cursor: pointer;
 }
 
 .colorPicker::-webkit-color-swatch {
@@ -69,4 +72,18 @@ button:hover {
 .colorPicker::-moz-color-swatch {
     border-radius: 50%;
     border: 3px solid #000000;
+}
+#brushText {
+    text-align: center;
+}
+
+#userChoice {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#clear {
+    width: 80px;
 }
