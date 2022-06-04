@@ -11,16 +11,26 @@
 
 <body>
     <h2 id="title">Etch-a-Sketch</h2>
-    
+
+    <div class="content">
+        <div class="userInput">
+            <input type="color" id="color" value="#FFD700" class="colorPicker">
+            <button type="button" id="oneColour" class="selection">1 colour mode</button>
+            <button type="button" id="rainbow" class="selection">Rainbow mode</button>
+            <button type="button" id="random" class="selection">Random colour</button>
+            <div>
+                <input type="range" min="1" max="64" value="16" class="slider" id="slider">
+                <div id="gridSize">16 x 16</div>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="toggleGridlines">
+                <span id="toggle">Gridlines</span>
+            </label>
+        </div>
     <div id="container">
     
     </div>
-    <div class="userInput">
-        <button type="button" id="gridSize">Change size of grid</button>
-        <input type="color" id="color" value="#FFD700">
-        <button type="button" id="random">Random colour</button>
-    
-    </div>
+</div>
     <script src="script.js"></script>
 </body>
 
